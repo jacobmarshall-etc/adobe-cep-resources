@@ -979,3 +979,27 @@ CSInterface.prototype.updateContextMenuItem = function(menuItemID, enabled, chec
 	var itemStatus = new ContextMenuItemStatus(menuItemID, enabled, checked);
 	ret = window.__adobe_cep__.invokeSync("updateContextMenuItem", JSON.stringify(itemStatus));
 };
+
+module.exports = {
+    CSXSWindowType: CSXSWindowType,
+    Version: Version,
+    VersionBound: VersionBound,
+    VersionRange: VersionRange,
+    Runtime: Runtime,
+    Extension: Extension,
+    CSEvent: CSEvent,
+    SystemPath: SystemPath,
+    ColorType: ColorType,
+    RGBColor: RGBColor,
+    Direction: Direction,
+    GradientStop: GradientStop,
+    GradientColor: GradientColor,
+    UIColor: UIColor,
+    AppSkinInfo: AppSkinInfo,
+    HostEnvironment: HostEnvironment,
+    HostCapabilities: HostCapabilities,
+    ApiVersion: ApiVersion,
+    MenuItemStatus: MenuItemStatus,
+    ContextMenuItemStatus: ContextMenuItemStatus,
+    CSInterface: CSInterface
+};
